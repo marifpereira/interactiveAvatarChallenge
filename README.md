@@ -78,9 +78,9 @@ This project was created as part of the **FrontendChallenge**, featuring Maria -
 - **Custom CSS Animations** - Keyframe animations for smooth effects
 
 ### 3D & Avatar
-**Note**: We attempted to implement 3D rendering with Three.js, but due to time constraints and the complexity of integrating large 3D models (GLB files exceeded 100MB), we opted for a **2D static image approach** with dynamic PNG switching based on emotions.
+**Note**: I attempted to implement 3D rendering with Three.js, but due to time constraints and the complexity of integrating large 3D models (GLB files exceeded 100MB), I opted for a **2D static image approach** with dynamic PNG switching based on emotions.
 
-**What We Tried**:
+**What I Tried**:
 - Three.js for 3D rendering
 - GLTFLoader for 3D model loading
 - Multiple GLB files for different emotions (happy, sad, surprised, closed eyes)
@@ -112,7 +112,7 @@ This project was created as part of the **FrontendChallenge**, featuring Maria -
 
 ### Accessibility Strategy (Hybrid Approach)
 
-We implemented a **hybrid accessibility strategy** that combines multiple methods to ensure maximum compatibility with assistive technologies:
+I implemented a **hybrid accessibility strategy** that combines multiple methods to ensure maximum compatibility with assistive technologies:
 
 1. **ARIA Live Regions**: Traditional screen reader support with `role="status"`, `aria-live`, and `aria-atomic`
 2. **Speech Synthesis**: Browser TTS for users who prefer audio feedback
@@ -595,7 +595,7 @@ GROQ_API_KEY=your_api_key
 To protect your API key from exposure:
 
 1. **Never commit API keys to Git** - Always use `.env.local` (which is gitignored)
-2. **Use server-side environment variables** - We use `GROQ_API_KEY` (NOT `NEXT_PUBLIC_GROQ_API_KEY`) so the key stays on the server and never reaches the browser
+2. **Use server-side environment variables** - I use `GROQ_API_KEY` (NOT `NEXT_PUBLIC_GROQ_API_KEY`) so the key stays on the server and never reaches the browser
 3. **Configure in Vercel** - For deployment, add `GROQ_API_KEY` in Vercel's Environment Variables (Settings → Environment Variables)
 4. **Rotate keys if exposed** - If you accidentally commit a key to a public repository, immediately:
    - Delete the exposed key in your provider's console
@@ -605,7 +605,7 @@ To protect your API key from exposure:
 **Why NOT use `NEXT_PUBLIC_` prefix?**
 - Variables prefixed with `NEXT_PUBLIC_` are exposed to the browser and can be viewed by anyone
 - This is a security risk for sensitive API keys
-- We use `GROQ_API_KEY` which stays server-side only in API routes
+- I use `GROQ_API_KEY` which stays server-side only in API routes
 
 ## 🔧 How to Extend / Customize
 
