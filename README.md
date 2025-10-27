@@ -161,7 +161,7 @@ npm install
 3. Configure environment variables
 Create a `.env.local` file:
 ```env
-GROQ_API_KEY=your_groq_api_key_here
+NEXT_PUBLIC_GROQ_API_KEY=your_groq_api_key_here
 ```
 
 4. Start the development server
@@ -587,7 +587,7 @@ The interface adapts to:
 ## 🔐 Environment Variables
 
 ```env
-GROQ_API_KEY=your_api_key
+NEXT_PUBLIC_GROQ_API_KEY=your_api_key
 ```
 
 ## 🔧 How to Extend / Customize
