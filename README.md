@@ -257,22 +257,34 @@ Required environment variables configured on Vercel:
 ## 📁 Project Structure
 
 ```
-src/
-├── app/
-│   ├── page.tsx              # Main entry point
-│   ├── layout.tsx            # Root layout with metadata
-│   ├── globals.css           # Global styles and animations
-│   └── api/
-│       └── chat/
-│           └── route.ts      # Groq API endpoint
-├── components/
-│   ├── InteractiveAvatar.tsx  # Main orchestration component
-│   ├── AvatarControls.tsx    # Avatar container with orbital buttons
-│   └── AvatarImage.tsx        # Avatar image rendering with emotions
-└── lib/
-    ├── config.ts              # Configuration utilities
-    ├── groq.ts                # Groq API client
-    └── voice.ts               # Voice interaction utilities
+interactive-avatar/
+├── src/
+│   ├── app/
+│   │   ├── page.tsx              # Main entry point
+│   │   ├── layout.tsx            # Root layout with metadata
+│   │   ├── globals.css           # Global styles and animations
+│   │   └── api/
+│   │       └── chat/
+│   │           └── route.ts      # Groq API endpoint (server-side)
+│   ├── components/
+│   │   ├── InteractiveAvatar.tsx  # Main orchestration component
+│   │   ├── AvatarControls.tsx     # Orbital button controls
+│   │   └── AvatarImage.tsx       # Avatar image with emotion display
+│   └── lib/
+│       ├── config.ts             # Environment configuration
+│       ├── groq.ts               # Groq API client (legacy, not used)
+│       └── voice.ts              # Voice interaction utilities
+├── public/
+│   ├── maria_avatar.png                # Default avatar
+│   ├── maria_avatar_sad.png            # Sad emotion
+│   ├── maria_avatar_surprised.png      # Surprised emotion
+│   ├── maria_avatar_closed_eyes.png    # Sleepy emotion
+│   └── demo/
+│       └── demo.webm                   # Demo video
+├── vercel.json                   # Vercel deployment config
+├── next.config.ts                # Next.js configuration
+├── tailwind.config.ts           # Tailwind CSS config
+└── package.json                  # Dependencies
 ```
 
 ## 🎨 Design Principles
