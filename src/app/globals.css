@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --avatar-bg-happy: #fef3c7;
+  --avatar-bg-sad: #dbeafe;
+  --avatar-bg-excited: #fef3c7;
+  --avatar-bg-thinking: #f3e8ff;
+  --avatar-bg-sleepy: #f3f4f6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --avatar-bg-happy: #451a03;
+    --avatar-bg-sad: #1e3a8a;
+    --avatar-bg-excited: #451a03;
+    --avatar-bg-thinking: #581c87;
+    --avatar-bg-sleepy: #374151;
+  }
+}
+
+body {
+  background: linear-gradient(180deg, rgb(234 150 215) 0%, rgb(130 167 255) 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease-in-out infinite;
+  color: var(--foreground);
+  font-family: 'Inter', system-ui, sans-serif;
+  min-height: 100vh; /* Garante que o background cobre toda a altura */
+}
+
+/* Animação sutil do gradiente */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Tooltip para ícones */
+.icon-button {
+  position: relative;
+}
+
+.icon-tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 1000;
+}
+
+.icon-button:hover .icon-tooltip {
+  opacity: 1;
+}
+
+/* Fonte Maior para Acessibilidade */
+html.large-font {
+  font-size: 1.125em !important;
+}
+
+/* Títulos aumentam mais proporcionalmente */
+html.large-font h1 {
+  font-size: 1.35em !important;
+}
+
+html.large-font h2 {
+  font-size: 1.25em !important;
+}
+
+html.large-font p {
+  font-size: 1.1em !important;
+}
+
+html.large-font [role="log"],
+html.large-font [role="log"] * {
+  font-size: 1.1em !important;
+}
+
+/* Introdução aumenta proporcionalmente com o chat */
+html.large-font .large-font-text {
+  font-size: 22px !important;
+}
+
+html.large-font input[type="text"],
+html.large-font button {
+  font-size: 1.1em !important;
+}
+
+/* Exceção: Menu de Acessibilidade mantém tamanho normal */
+html.large-font [role="menu"],
+html.large-font [role="menu"] *,
+html.large-font [data-accessibility-menu] * {
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+}
+
+/* Classes para grandes fontes */
+h1.large-font-title {
+  font-size: 36px !important; /* tamanho padrão */
+  transition: font-size 0.3s ease-in-out;
+}
+
+html.large-font h1.large-font-title {
+  font-size: 48px !important; /* modo aumentado */
+}
+
+/* Placeholder branco para input glassmorphism */
+.glass-input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.glass-input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+  opacity: 1;
+}
+
+.glass-input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.glass-input::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.large-font-text {
+  font-size: 18px !important;
+}
