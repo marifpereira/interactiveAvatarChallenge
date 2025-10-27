@@ -706,14 +706,13 @@ Developed for a Frontend Challenge
 - **Groq** - For fast AI inference
 - **Framer Motion** - For beautiful animations
 - **Lucide React** - For beautiful, accessible icons
-- **Three.js** - For 3D rendering engine
 - **Tailwind CSS** - For rapid styling
 
 ## 🎓 Lessons Learned
 
 1. **Accessibility is not optional** - Built accessibility from the ground up, not as an afterthought
 2. **Progressive enhancement** - Hybrid approaches provide better compatibility
-3. **Performance matters** - Large 3D files need careful handling
+3. **Performance matters** - Large 3D files need careful handling so i've used th 2D insteed
 4. **User feedback** - Direct testing with assistive technologies is essential
 5. **Type safety** - TypeScript caught many potential bugs early
 
