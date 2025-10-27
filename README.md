@@ -2,6 +2,40 @@
 
 An accessible, multilingual, emotion-aware AI avatar built with Next.js, Groq API, and Framer Motion. Features hybrid accessibility, glassmorphism UI, and smooth UX transitions for the challenge.
 
+## 📑 Table of Contents
+
+- [🎯 Project Overview](#-project-overview)
+  - [✅ Challenge Expectations Met](#-challenge-expectations-met)
+- [🌟 Features](#-features)
+  - [Core Functionality](#core-functionality)
+  - [User Interface](#user-interface)
+  - [Accessibility Features](#accessibility-features-wcag-21-aa-compliant)
+- [🛠️ Tech Stack](#️-tech-stack)
+  - [Frontend Framework](#frontend-framework)
+  - [Styling & Design](#styling--design)
+  - [3D & Avatar](#3d--avatar)
+  - [Voice & Speech](#voice--speech)
+  - [AI & Backend](#ai--backend)
+- [🏗️ Architecture & Strategy](#️-architecture--strategy)
+  - [Accessibility Strategy (Hybrid Approach)](#accessibility-strategy-hybrid-approach)
+  - [CSS Architecture](#css-architecture)
+  - [Component Architecture](#component-architecture)
+  - [Animation Strategy](#animation-strategy)
+- [🎨 Design Principles](#-design-principles)
+  - [Glassmorphism-Inspired Visual Style](#glassmorphism-inspired-visual-style-)
+  - [Visual Hierarchy](#visual-hierarchy)
+  - [Color Palette](#color-palette)
+- [🚀 Getting Started](#-getting-started)
+- [📁 Project Structure](#-project-structure)
+- [🌟 Live Demo](#-live-demo)
+- [🎬 Demo Video](#-demo-video)
+- [📝 Deployment](#-deployment)
+  - [Why Vercel?](#why-vercel)
+- [🔐 Environment Variables](#-environment-variables)
+  - [Security Best Practices](#-security-best-practices)
+- [🔧 How to Extend / Customize](#-how-to-extend--customize)
+- [📊 Responsive Design](#-responsive-design)
+
 ## 🎯 Project Overview
 
 This project was created as part of the **FrontendChallenge**, featuring Maria - an interactive avatar with voice and text interaction capabilities. The avatar responds to user input, changes emotions based on conversation context, and supports multiple languages with advanced accessibility features.
