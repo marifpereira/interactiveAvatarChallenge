@@ -124,6 +124,7 @@ This project was created as part of the **FrontendChallenge**, featuring Maria -
 - AvatarImage.tsx component for avatar rendering
 - Animated circular ring effect around avatar
 - Smooth transitions between emotional states
+- Four emotion states: happy, sad, surprised, and closed eyes (sleepy)
 
 ### Voice & Speech
 - **Web Speech API** - Speech-to-text recognition
@@ -508,10 +509,10 @@ This multimodal approach ensures users with different abilities and preferences 
 - Performance concerns with large 3D models on web
 
 **Solution**: 
-- Switched to 2D static PNG images with dynamic emotion switching
-- Created AvatarImage.tsx component for avatar rendering
-- Implemented animated circular ring effects for visual interest
-- Maintained emotion switching functionality with PNG assets
+- 2D static PNG images with dynamic emotion switching
+- AvatarImage.tsx component for avatar rendering
+- Animated circular ring effects for visual interest
+- Four emotion states (happy, sad, surprised, sleepy)
 
 ### Challenge 2: Emotion Detection Accuracy
 **Problem**: Generic words triggering wrong emotions  
@@ -685,11 +686,11 @@ export async function getChatResponse(message: string, language: string) {
 }
 ```
 
-### Replacing Avatar with 3D Model
-To implement 3D rendering, you would need to:
-1. Install Three.js dependencies: `npm install three @react-three/fiber @react-three/drei`
-2. Replace the static image rendering in `/src/components/AvatarImage.tsx` with a Three.js Canvas
-3. Import and load 3D models (GLB files optimized for web)
+### Extending Avatar Capabilities
+To add new avatar features, you can:
+1. Add new emotion PNG files to the `/public` directory
+2. Update the `detectEmotion` function in `/src/app/api/chat/route.ts`
+3. Add corresponding emoji in the emotion controls in `AvatarControls.tsx`
 
 ## 📄 License
 
