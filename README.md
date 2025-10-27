@@ -590,6 +590,23 @@ The interface adapts to:
 GROQ_API_KEY=your_api_key
 ```
 
+### 🔒 Security Best Practices
+
+To protect your API key from exposure:
+
+1. **Never commit API keys to Git** - Always use `.env.local` (which is gitignored)
+2. **Use server-side environment variables** - We use `GROQ_API_KEY` (NOT `NEXT_PUBLIC_GROQ_API_KEY`) so the key stays on the server and never reaches the browser
+3. **Configure in Vercel** - For deployment, add `GROQ_API_KEY` in Vercel's Environment Variables (Settings → Environment Variables)
+4. **Rotate keys if exposed** - If you accidentally commit a key to a public repository, immediately:
+   - Delete the exposed key in your provider's console
+   - Create a new key
+   - Update all deployments with the new key
+
+**Why NOT use `NEXT_PUBLIC_` prefix?**
+- Variables prefixed with `NEXT_PUBLIC_` are exposed to the browser and can be viewed by anyone
+- This is a security risk for sensitive API keys
+- We use `GROQ_API_KEY` which stays server-side only in API routes
+
 ## 🔧 How to Extend / Customize
 
 Developers can easily extend this project:
