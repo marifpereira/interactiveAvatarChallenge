@@ -161,7 +161,7 @@ npm install
 3. Configure environment variables
 Create a `.env.local` file:
 ```env
-NEXT_PUBLIC_GROQ_API_KEY=your_groq_api_key_here
+GROQ_API_KEY=your_groq_api_key_here
 ```
 
 4. Start the development server
@@ -252,7 +252,7 @@ The project includes a `vercel.json` configuration file for optimal deployment s
 ### Environment Variables
 
 Required environment variables configured on Vercel:
-- `NEXT_PUBLIC_GROQ_API_KEY`: Groq API authentication
+- `GROQ_API_KEY`: Groq API authentication (server-side only)
 
 ## 📁 Project Structure
 
@@ -587,7 +587,7 @@ The interface adapts to:
 ## 🔐 Environment Variables
 
 ```env
-NEXT_PUBLIC_GROQ_API_KEY=your_api_key
+GROQ_API_KEY=your_api_key
 ```
 
 ## 🔧 How to Extend / Customize

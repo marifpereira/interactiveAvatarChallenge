@@ -1,10 +1,10 @@
 // Configuração da API Groq
 // Para usar, crie um arquivo .env.local na raiz do projeto com:
-// NEXT_PUBLIC_GROQ_API_KEY=sua_chave_aqui
+// GROQ_API_KEY=sua_chave_aqui
 
 export const GROQ_CONFIG = {
   // Sua chave da Groq API
-  API_KEY: process.env.NEXT_PUBLIC_GROQ_API_KEY || '',
+  API_KEY: process.env.GROQ_API_KEY || '',
   BASE_URL: "https://api.groq.com/openai/v1",
   MODEL: "llama-3.3-70b-versatile", // Modelo mais recente e rápido
   MAX_TOKENS: 150,
