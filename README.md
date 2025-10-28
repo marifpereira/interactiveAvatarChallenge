@@ -224,7 +224,7 @@ npm run dev
 5. Click "Nova Conversa" to reset
 
 ### Language Selection
-1. Click the options button (horizontal dots icon)
+1. Click the options button (globe icon)
 2. Select a flag: 🇧🇷 (Portuguese), 🇺🇸 (English), 🇫🇷 (French)
 3. All UI text and AI responses change to selected language
 
