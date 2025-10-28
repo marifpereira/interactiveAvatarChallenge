@@ -692,10 +692,6 @@ To add new avatar features, you can:
 2. Update the `detectEmotion` function in `/src/app/api/chat/route.ts`
 3. Add corresponding emoji in the emotion controls in `AvatarControls.tsx`
 
-## 📄 License
-
-MIT License - see LICENSE file for details
-
 ## 👤 Author
 
 **Mariana Pereira**  
